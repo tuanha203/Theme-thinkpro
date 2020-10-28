@@ -1,0 +1,60 @@
+@media only screen and (max-width: 1026px) {
+    #nav-bar .navbar-icons {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #nav-bar .form-inline {
+        width: 400px !important;
+        left: 28% !important;
+    }
+    #nav-bar .navbar-nav .nav-item:first-child::before {
+        content: '';
+        display: none;
+    }
+    .nav-bar__menu {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 662px) {
+    #nav-bar .form-inline {
+        /* display is not match with toggle so... */
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 1142px) {
+    #nav-bar .form-inline {
+        width: 350px;
+        left: 37%;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    #nav-bar .form-inline {
+        width: 300px;
+        left: 40%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(6, 193, 213);
+    border-radius: 10px;
+}
+
+#styleScroll::-webkit-scrollbar{
+    width: 4px;
+}
+
+#styleScroll::-webkit-scrollbar-thumb{
+    background: rgb(216, 217, 218);
+}
+

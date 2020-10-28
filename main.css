@@ -1,0 +1,238 @@
+#main {
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: relative;
+}
+
+.cover-color {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.548);
+    z-index: 2;
+}
+
+.directory {
+    margin: 0 0 40px 0px;
+    cursor: pointer;
+}
+
+.directory ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    font-weight: 600;
+}
+
+.directory ul li {
+    padding-left: 5px;
+}
+
+.directory ul img {
+    width: 80px;
+}
+
+.sort-fillter {
+    margin-left: 100px;
+    display: inline-block;
+    font-size: 16.5px;
+}
+
+.sort-fillter * {
+    margin-right: 22px;
+}
+
+.sort-fillter a {
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.sort-fillter a:hover {
+    color: rgb(6, 193, 213);
+}
+
+.amount {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.title h2 {
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.views {
+    display: flex;
+    float: right;
+    font-size: 19px;
+}
+
+.views .fas {
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.views .fas:hover {
+    background-color: rgba(94, 91, 88, 0.082);
+}
+
+/*  style card */
+
+.card {
+    padding: 10px 20px 20px 20px;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.card-img-top {
+    transition: transform 0.6s;
+}
+
+.card:hover .card-img-top {
+    transform: translateY(-6px);
+}
+
+.list-product .row{
+    width: 100% !important;
+    margin: 0;
+}
+
+.list-product .card:hover {
+    position: relative;
+    box-shadow: -1px 2px 24px 4px rgba(0, 0, 0, 0.75);
+    z-index: 1;
+}
+
+.card-body {
+    padding: 8px 0px;
+}
+
+.product-price .price strong {
+    color: rgb(219, 50, 50);
+}
+
+.list-product .col {
+    padding: 0 !important;
+}
+
+/*  catalogue */
+
+
+
+.catalogue-wrap {
+    cursor: pointer;
+    width: 95%;
+    position: absolute;
+    overflow-y: scroll;
+    height: 90vh;
+}
+
+.catalogue {
+    border-top: 0.5px solid rgba(114, 113, 113, 0.418);
+
+}
+
+.catalogue h5{
+    font-size: 17px;
+    padding: 14px 2px 16px 2px;
+    margin: 0;
+}
+
+.catalogue:first-child a{
+    text-decoration: underline;
+    margin-right: 6px;
+    color: black;
+}
+
+.catalogue:first-child a:hover{
+    color:  rgb(6, 193, 213);
+}
+
+/*  fixed col .catalogue */
+
+.fixed-col{
+    position: fixed;
+    top: 40px;
+    z-index: 10;
+    width: 18.2%;
+}
+
+.stuck-col{
+    position: absolute;
+    width: 95%;
+    top: 460px;
+}
+
+/*  check box for catalogue */
+
+.check-list{
+    display: none;
+}
+
+label.container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  label.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 19px;
+    width: 19px;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    border: black solid 2.5px;
+  }
+  
+  label.container:hover input ~ .checkmark {
+    background-color: rgb(204, 204, 204);
+  }
+  
+  label.container input:checked ~ .checkmark {
+    background-color: rgb(6,193,212);
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  label.container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  label.container .checkmark:after {
+    left: 4.6px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid rgb(0, 0, 0);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

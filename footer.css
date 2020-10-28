@@ -1,0 +1,65 @@
+#footer {
+    background-color: rgb(5, 4, 44);
+    margin-top: 100px;
+    padding: 50px 0;
+}
+#footer .row{
+    width: 100%;
+}
+
+#footer .container-fluid {
+    padding: 50px 0;
+}
+
+.footer-logo {
+    padding-left: 30px;
+}
+
+.hotline {
+    padding-top: 20px;
+    color: white;
+}
+
+.social {
+    padding-top: 50px;
+}
+
+.social i {
+    margin-right: 20px;
+    font-size: 15px;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(6, 193, 213);
+}
+
+.social a:hover {
+    color: black;
+}
+
+#footer h5 {
+    color: white;
+}
+
+#footer ul {
+    list-style: none;
+    color: rgb(224, 223, 223);
+    font-size: 17px;
+}
+
+.infor-shop {
+    color: white;
+    margin-top: 25px;
+    font-size: 17px;
+}
+
+.map {
+    display: block;
+    margin-top: 8px;
+    color: rgb(6, 193, 213);
+}
+
+.map:hover {
+    text-decoration: none;
+    color: rgb(6, 193, 213);
+}
